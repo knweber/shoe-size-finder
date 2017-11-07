@@ -5,7 +5,8 @@ driver.get("https://tjmaxx.tjx.com/store/jump/product/Western-Toe-Heel-Booties/1
 
 sizes = driver.find_elements_by_class_name("option-name")
 
-for size in sizes:
-    print(size)
+for available in sizes:
+    # size = available.getAttribute("innerHTML")
+    print(available)
 
 driver.quit()
