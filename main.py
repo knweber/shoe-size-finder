@@ -12,8 +12,6 @@ def getSizes():
 
     soup = BeautifulSoup(html, "html.parser")
 
-    available_sizes = []
-
     for size in soup.find_all("span", class_="option-name"):
         if size.contents[0] == '8':
             sendEmail()
